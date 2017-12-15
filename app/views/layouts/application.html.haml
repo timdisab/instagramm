@@ -1,15 +1,16 @@
 !!! 5
 %html
   %head
-    %title Instagramm
+    %title Photogram
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
+    = favicon_link_tag 'favicon.ico'
 
   %body
     %nav.navbar.navbar-inverse
       .container
-        .navbar-brand= link_to "Instagramm", root_path
+        .navbar-brand= link_to image_tag("photologo.png"), root_path
 
         - if user_signed_in?
           %ul.nav.navbar-nav.navbar-left

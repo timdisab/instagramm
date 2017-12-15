@@ -19,7 +19,7 @@
 @import "bootstrap";
 
 body {
-  background: #E9E9E9;
+  background: #ffffff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -37,10 +37,13 @@ nav {
   background: #529ECC;
 
   .navbar-brand {
+    img {
+      margin-top: -0.7em;
+    }
     a {
-      color: #529ECC;
+      color: #ffffff;
       font-weight: bold;
-      font-size: 1.6em;
+      font-size: 1.0em;
       &:hover {
         text-decoration: none;
       }
